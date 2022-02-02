@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>My Profile</title>
+    <link href="style.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #ff5622;
+        }
+
+        .grid-container {
+
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 10px;
+            background-color: #ff5622;
+            padding: 10px;
+        }
+
+        .grid-container div {
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 5;
+            border-radius: 10px;
+            box-shadow: 1px 2px #e0e0e0ee, 2px 2px #b8b8b8, 3px 3px #757575, 4px 4px #5a5a5a, 5px 5px #000000;
+            margin: 10px;
+        }
+
+        img {
+            width: 400px;
+            border-radius: 10px;
+
+        }
+
+
+        .container {
+            /* Center vertically and horizontally */
+            display: grid;
+            place-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <ul>
+            <li><a id="logo" href="./index.html" > <img src="./images/avatar-4-svgrepo-com.svg" alt=""> </a> </li>
+            <li><a href="./photos.html" class="header-text"> My Photos </a> </li>
+            <li><a href="./aboutme.html" class="header-text">About Me </a></li>
+            <li><a href="./contactme.html" class="header-text"> Contact Me </a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+
+
+        <div class="grid-container">
+            <div > <img src="./images/gallery/IMG (1).JPG " alt=""></div>
+            <div > <img src="./images/gallery/IMG (2).JPG " alt=""></div>
+            <div > <img src="./images/gallery/IMG (3).JPG " alt=""></div>
+            <div > <img src="./images/gallery/IMG (4).JPG " alt=""></div>
+            <div > <img src="./images/gallery/IMG (5).JPG " alt=""></div>
+            <div > <img src="./images/gallery/IMG (6).JPG " alt=""></div>
+            <div > <img src="./images/gallery/IMG (7).JPG " alt=""></div>
+            <div > <img src="./images/gallery/IMG (8).JPG " alt=""></div>
+            <div > <img src="./images/gallery/IMG (9).JPG " alt=""></div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

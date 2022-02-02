@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>My Profile</title>
+    <link href="style.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #ff5622;
+        }
+
+
+        .item1 {
+            grid-area: left;
+        }
+
+        .item2 {
+            grid-area: right;
+        }
+
+
+        .grid-container {
+
+            display: grid;
+            grid-template-areas:
+                'left right';
+            grid-gap: 10px;
+            background-color: #ff5622;
+            padding: 10px;
+        }
+
+        .grid-container>div {
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+            font-size: 30px;
+            padding: 10px;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: rgb(255, 255, 255);
+            box-shadow: 1px 2px #e0e0e0ee, 2px 2px #d6d6d6, 3px 3px #757575, 4px 4px #5a5a5a, 5px 5px #000000;
+            margin: 10px;
+        }
+
+        .container {
+            /* Center vertically and horizontally */
+            display: grid;
+            place-items: center;
+        }
+
+        img {
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <ul>
+            <li><a id="logo" href="./index.html" > <img src="./images/avatar-4-svgrepo-com.svg" alt=""> </a> </li>
+            <li><a href="./photos.html" class="header-text"> My Photos </a> </li>
+            <li><a href="./aboutme.html" class="header-text">About Me </a></li>
+            <li><a href="./contactme.html" class="header-text"> Contact Me </a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="grid-container">
+            <div class="item1">
+                <h1 class="header-text">
+                    this is a bio about me 
+                </h1>
+
+                <h3 class="shadow-text">
+                    these are my fav hoppies
+                </h3>
+                <ol  class="shadow-text" style="font-size: 20px;">                  
+                    <li>
+                        item 1
+                    </li>
+                    
+                    <li>
+                        item 2
+                    </li>
+                    
+                    <li>
+                        item 3
+                    </li>
+                </ol>
+
+                <p class="shadow-text" style="font-size: 25px;">
+                    this is a little paragraph about what i like to eat
+                </p>
+
+            </div>
+            <div class="item2">
+                <img src="./images/received_722253488200569.jpeg" alt="">
+            </div>
+        </div>
+
+        
+    </div>
+
+</body>
+
+</html>

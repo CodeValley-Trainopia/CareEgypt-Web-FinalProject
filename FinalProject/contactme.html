@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>My Profile</title>
+    <link href="style.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #ff5622;
+        }
+
+
+        .grid-container {
+
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 10px;
+            background-color: #ff5622;
+            padding: 10px;
+        }
+
+        .grid-container>div {
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+            font-size: 30px;
+            padding: 10px;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: rgb(255, 255, 255);
+            box-shadow: 1px 2px #e0e0e0ee, 2px 2px #d6d6d6, 3px 3px #757575, 4px 4px #5a5a5a, 5px 5px #000000;
+            margin: 10px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .container {
+            /* Center vertically and horizontally */
+            display: grid;
+            place-items: center;
+        }
+
+        .fa {
+            padding: 20px;
+            font-size: 300px;
+            width: 250px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            color: #ff5622;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <ul>
+            <li><a id="logo" href="./index.html"> <img src="./images/avatar-4-svgrepo-com.svg" alt=""> </a> </li>
+            <li><a href="./photos.html" class="header-text"> My Photos </a> </li>
+            <li><a href="./aboutme.html" class="header-text">About Me </a></li>
+            <li><a href="./contactme.html" class="header-text"> Contact Me </a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="grid-container">
+            <div>
+
+                <a href="#" class="fa fa-facebook"></a>
+            </div>
+
+            <div>
+
+                <a href="#" class="fa fa-google"></a>
+            </div>
+
+            <div>
+
+                <a href="#" class="fa fa-youtube"></a>
+            </div>
+
+            <div>
+
+                <a href="#" class="fa fa-pinterest"></a>
+            </div>
+
+            <div>
+
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+
+            <div>
+                <a href="#" class="fa fa-twitter"></a>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

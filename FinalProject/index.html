@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>My Photos</title>
+    <link href="style.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #ff5622;
+        }
+
+
+        .item2 {
+            grid-area: left;
+        }
+
+        .item3 {
+            grid-area: hmada;
+        }
+
+        .item4 {
+            grid-area: right;
+        }
+
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'hmada hmada hmada hmada hmada hmada'
+                'footer footer left left right right';
+            grid-gap: 10px;
+            background-color: #ff5622;
+            padding: 10px;
+        }
+
+        .grid-container div {
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+            font-size: 30px;
+            padding: 10px;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: rgb(255, 255, 255);
+            box-shadow: 1px 2px #e0e0e0ee, 2px 2px #d6d6d6, 3px 3px #757575, 4px 4px #5a5a5a, 5px 5px #000000;
+            margin: 10px;
+        }
+
+        .text-3d {
+            -webkit-text-stroke: 5px rgba(0, 0, 0, 0.8);
+            /* width and color */
+            font-family: Verdana, sans-serif;
+            line-height: 1em;
+            color: #ff5622;
+            font-weight: bold;
+            font-size: 62px;
+            text-shadow: 7px 7px 0 rgba(10, 10, 10, 0.671);
+        }
+
+
+        .container {
+            /* Center vertically and horizontally */
+            display: grid;
+            place-items: center;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <ul>
+            <li><a id="logo" href="./index.html" > <img src="./images/avatar-4-svgrepo-com.svg" alt=""> </a> </li>
+            <li><a href="./photos.html" class="header-text"> My Photos </a> </li>
+            <li><a href="./aboutme.html" class="header-text">About Me </a></li>
+            <li><a href="./contactme.html" class="header-text"> Contact Me </a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+
+
+        <div class="grid-container">
+            <div class="item4"> <a href="./contactme.html" class="text-3d">Contact <br> Me</a> </div>
+            <div class="item2"> <a href="./photos.html" class="text-3d"> My <br> Photos </a> </div>
+            <div class="item3">
+                <h1 class="text-3d">Enter Your <br> Name Hear</h1>
+            </div>
+            <div class="item5"> <a href="./aboutme.html" class="text-3d">About <br> Me </a></div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
